@@ -1,0 +1,80 @@
+article#about {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00092C;
+  padding: 40px;
+  gap: 30px;
+}
+
+article#about .about-tools {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 20px;
+  order: 2;
+}
+
+article#about .about-tools img:first-child {
+  width: 200px;
+  height: 300px;
+  order: 2;
+}
+
+article#about .about-tools img:last-child {
+  width: 300px;
+  height: 200px;
+  order: 1;
+}
+
+article#about .about-description {
+  flex-basis: 100%;
+  order: 2;
+}
+
+article#about .about-description p {
+  color: #EEEEEE;
+  font-size: 24px;
+}
+
+article#about .about-title {
+  flex-basis: 100%;
+  order: 1;
+}
+
+article#about .about-title h2 {
+  color: #EEEEEE;
+  font-size: 38px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  article#about .about-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    order: 2;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  article#about {
+    gap: 60px;
+    padding: 80px 60px;
+  }
+
+  article#about .about-tools {
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  article#about .about-title {
+    text-align: center;
+  }
+  
+  article#about .about-description p {
+    text-align: center;
+    font-size: 18px;
+  }
+}

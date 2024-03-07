@@ -1,0 +1,28 @@
+article#schedules {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+article#schedules .schedules-title h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+article#schedules .schedules-days {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article#schedules .schedules-days section {
+  background-color: #00092C;
+  padding: 30px;
+  width: 100%;
+}
+
+article#schedules .schedules-days section p {
+  color: #EEEEEE;
+  font-size: 16px;
+}

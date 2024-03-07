@@ -1,0 +1,119 @@
+article#home {
+  background-image: url('../assets/images/crounches.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120vh;
+  position: relative;
+  padding: 10px;
+}
+
+article#home .overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  opacity: 0.6;
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+article#home .home-content {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  z-index: 2;
+  padding: 0 30px;
+}
+
+article#home .home-content div {
+  flex-grow: 1;
+}
+
+article#home .home-content div:first-child {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+article#home .home-content div:last-child {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+article#home .home-content h2 {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #00092C;
+}
+
+article#home .home-content a {
+  background-color: #FF5F00;
+  padding: 20px 80px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  article#home .home-content h2 {
+    font-size: 36px;
+  }
+  
+  article#home .home-content a {
+    font-size: 24px;
+  }
+}
+
+/* Large devices (tablets, 992px and up) */
+@media screen and (min-width: 992px) {
+  article#home .home-content {
+    padding: 80px;
+  }
+
+  article#home .home-content div:first-child {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+  }
+  
+  article#home .home-content div:last-child {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 30px;
+  }
+
+  article#home .home-content h2 {
+    font-size: 48px;
+    text-align: left;
+    width: 50%;
+  }
+  
+  article#home .home-content a {
+    font-size: 24px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  article#home .home-content h2 {
+    font-size: 52px;
+  }
+  
+  article#home .home-content a {
+    font-size: 24px;
+  }
+}

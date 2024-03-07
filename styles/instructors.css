@@ -1,0 +1,61 @@
+article#instructors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+article#instructors section.instructor {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+article#instructors section.instructor img {
+  max-width: 100%;
+}
+
+article#instructors section.instructor .overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  opacity: 0.4;
+
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+article#instructors section.instructor p.name {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #EEEEEE;
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px #00092C;
+  z-index: 2;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  article#instructors {
+    gap: 2%;
+    row-gap: 10px;
+    padding: 100px;
+  }
+
+  article#instructors section.instructor {
+    flex: 0 0 49%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  article#instructors {
+    row-gap: 20px;
+  }
+}

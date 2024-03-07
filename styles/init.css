@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px !important;
+}
+
+main aside {
+  order: 2;
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+main #content {
+  order: 1;
+  flex-basis: 75%;
+}
+
+footer {
+  background-color: #00092C;
+  padding: 30px;
+}
+
+footer p {
+  color: #EEEEEE;
+  text-align: center;
+}
+
+/* Large devices (tablets, 992px and up) */
+@media screen and (min-width: 992px) {
+  main {
+    flex-direction: row !important;
+  }
+
+  main aside {
+    order: 1;
+  }
+  
+  main #content {
+    order: 2;
+  }
+}
